@@ -1,0 +1,23 @@
+{
+  "expo": {
+    "name": "Kafe Sosyal",
+    "slug": "kafe-sosyal",
+    "version": "0.1.0",
+    "orientation": "portrait",
+    "scheme": "kafeapp",
+    "userInterfaceStyle": "light",
+    "ios": {
+      "supportsTablet": false,
+      "bundleIdentifier": "app.kafesosyal.mobile",
+      "infoPlist": { "NSCameraUsageDescription": "Kafedeki QR kodunu okutmak için kamera kullanılır. Konumun alınmaz." }
+    },
+    "android": {
+      "package": "app.kafesosyal.mobile",
+      "permissions": ["CAMERA"]
+    },
+    "plugins": [
+      ["expo-camera", { "cameraPermission": "Kafedeki QR kodunu okutmak için kamera kullanılır. Konumun alınmaz." }],
+      "expo-secure-store"
+    ]
+  }
+}
